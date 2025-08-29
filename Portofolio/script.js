@@ -41,3 +41,12 @@ skillSections.forEach(bar => {
   bar.style.width = "0"; // reset ke 0
   skillObserver.observe(bar);
 });
+
+// Navbar toggle (mobile)
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.navbar nav ul');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+
