@@ -53,8 +53,6 @@ body {
   font-size: 0.9rem;
 }
 
-
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -73,14 +71,14 @@ body {
   color: #666;
 }
 .hero-text h1 {
-  font-size: clamp(2.6rem, 5vw, 4.2rem); /* ukuran besar & responsif */
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
 .hero-text h1 span {
   color: #8e8e8e;
-  font-weight: 800; /* lebih tebal agar menonjol */
+  font-weight: 800;
 }
 
 .hero-text p {
@@ -298,7 +296,7 @@ section.show {
 .skill-card p {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #3c42ff; /* warna biru profesional */
+  color: #3c42ff;
 }
 
 /* Progress Bar */
@@ -357,3 +355,166 @@ section.show {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar ul li a.active {
+  color: #3c42ff;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* 📩 Contact Section (White Theme) */
+/* ============================= */
+.contact-section {
+  padding: 80px 10%;
+  background: #ffffff; /* putih */
+  color: #333333;
+}
+
+.contact-section .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-section .section-header h2 {
+  font-size: 2.5rem;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.contact-section .section-header p {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Info Contact (Kiri) */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+/* Form Contact (Kanan) */
+.contact-form {
+  flex: 1.5;
+  min-width: 320px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #3c42ff;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.2);
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-form button {
+  display: inline-block;
+  background: #3c42ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #3c42ff;
+  transform: translateY(-3px);
+}
+
+footer {
+  background: #111; /* samain dengan navbar (dark) */
+  color: #fff;
+  padding: 25px 10%;
+  border-top: 1px solid #222;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #ccc; /* abu-abu biar gak terlalu putih */
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  text-decoration: none;
+  color: #3c42ff; /* warna aksen sama dengan button/nav */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #3c42ff;
+}
