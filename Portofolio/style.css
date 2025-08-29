@@ -518,3 +518,110 @@ footer {
 .footer-socials a:hover {
   color: #3c42ff;
 }
+
+/* Default: sembunyikan hamburger di desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* Muncul hanya di layar kecil */
+@media (max-width: 576px) {
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .skills-grid, 
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Navbar jadi stack */
+  .navbar nav ul {
+    display: none; /* disembunyikan default */
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .navbar nav ul.show {
+    display: flex;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .btn.small {
+    display: none; /* hide button Let's Talk di hp */
+  }
+
+  /* Tombol hamburger */
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .skills-grid, 
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .footer-socials {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
